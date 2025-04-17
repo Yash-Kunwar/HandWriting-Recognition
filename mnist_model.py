@@ -58,16 +58,3 @@ plt.xlabel('Predicted Labels')
 plt.ylabel('True Labels')
 plt.title('Confusion Matrix Heatmap')
 plt.show()
-
-# Confusion matrix
-conf_matrix = confusion_matrix(y_test, predicted_labels)
-print("Confusion Matrix:")
-print(conf_matrix)
-
-# Plotting the confusion matrix as a heatmap
-plt.figure(figsize=(10, 8))
-sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues', xticklabels=range(10), yticklabels=range(10))
-plt.xlabel('Predicted Labels')
-plt.ylabel('True Labels')
-plt.title('Confusion Matrix Heatmap')
-plt.show()
